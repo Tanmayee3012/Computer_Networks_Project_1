@@ -1,5 +1,6 @@
 import threading
 import socket
+<<<<<<< HEAD
 
 # server=input("Which connection do you want to use ?? \n Enter 1 for TCP \n Enter 2 for UDP \n")
 # if(server==1)
@@ -13,6 +14,8 @@ import socket
 
 
 
+=======
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
 nickname = input('Choose a nickname: ')
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('127.0.0.1', 2022))
@@ -28,7 +31,11 @@ def client_receive():
                 print(message)
         except:
             print('Disconnected!')
+<<<<<<< HEAD
             client.close()
+=======
+            # client.close()
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
             break
 
 

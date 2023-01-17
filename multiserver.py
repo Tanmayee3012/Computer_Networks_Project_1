@@ -23,6 +23,11 @@ def handle_client(client):
             clients.remove(client)
             client.close()
             nickname = nicknames[index]
+<<<<<<< HEAD
+=======
+            print(nickname+' has left the chat room ! ')
+            print('Server is listening ...')
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
             display(f'{nickname} has left the chat room!'.encode('utf-8'))
             nicknames.remove(nickname)
             break
@@ -32,6 +37,10 @@ def receive():
         print('Server is listening ...')
         client, address = server.accept()
         print(f'connection is established with {str(address)}')
+<<<<<<< HEAD
+=======
+        # print(client)
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
         client.send('nickname?'.encode('utf-8'))
         nickname = client.recv(1024).decode()
         nicknames.append(nickname)

@@ -19,7 +19,10 @@ def receive(client):
                 # client.close()
                 print('\nClient Disconnected!')
                 break
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
 def send(client):
        while True:
             message =input()
@@ -34,8 +37,11 @@ def send(client):
                     thread = threading.Thread(target=send,args=(client,))
                     thread.start()
                     break
+<<<<<<< HEAD
 
         
+=======
+>>>>>>> 0369c431b0e7ab915bc3a983c428d614b65abf76
     
 thread = threading.Thread(target=receive,args=(client,))
 thread.start()
